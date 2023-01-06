@@ -14,59 +14,239 @@
   </head>
 
   <body>
+    <!-- frame-->
     <div class="frame">
       <div class="main_frame">
         <div class="left_frame">
-          <div class="left_1">
-            <div class="left_1_1">
-              <img
-                src="images/profile.png"
-                width="156px"
-                height="142px"
-                alt=""
-              />
+          <div class="left_1_1">
+            <img src="images/profile.png" width="156px" height="142px" alt="" />
+          </div>
+          <div class="left_1_2"><%=user.name%></div>
+          <div class="left_1_3"><%=user.profession%></div>
+          <div class="left_icons">
+            <a class="link_href" href=""
+              ><div class="icon">
+                <img src="icon/Facebook.svg" class="icon-1" /></div
+            ></a>
+            <a class="link_href" href=""
+              ><div class="icon">
+                <img src="icon/Instagram.svg" class="icon-1" /></div
+            ></a>
+            <a class="link_href" href=""
+              ><div class="icon">
+                <img src="icon/Twitter (1).svg" class="icon-1" /></div
+            ></a>
+            <a class="link_href" href=""
+              ><div class="icon">
+                <img src="icon/Linkeding.svg" class="icon-1" /></div
+            ></a>
+            <a class="link_href" href=""
+              ><div class="icon">
+                <img src="icon/Youtube.svg" class="icon-1" /></div
+            ></a>
+            <a class="link_href" href=""
+              ><div class="icon">
+                <img src="icon/Dribbble.svg" class="icon-1" /></div
+            ></a>
+          </div>
+
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="left_infor">
+              <div class="left_info"><p>Age:</p></div>
+              <div class="left_value"><%=user.age%></div>
             </div>
-            <div class="left_1_2"><%=user.name%></div>
-            <div class="left_1_3"><%=user.profession%></div>
-            <div class="left_icons">
-              <a class="link_href" href=""
-                ><div class="icon">
-                  <img src="icon/Vector.svg" class="icon-1" /></div
-              ></a>
-              <a class="link_href" href=""
-                ><div class="icon">
-                  <img src="icon/Vector (1).svg" class="icon-1" /></div
-              ></a>
-              <a class="link_href" href=""
-                ><div class="icon">
-                  <img src="icon/Vector (2).svg" class="icon-1" /></div
-              ></a>
-              <a class="link_href" href=""
-                ><div class="icon">
-                  <img src="icon/Vector (3).svg" class="icon-1" /></div
-              ></a>
-              <a class="link_href" href=""
-                ><div class="icon">
-                  <img src="icon/Vector (4).svg" class="icon-1" /></div
-              ></a>
-              <a class="link_href" href=""
-                ><div class="icon">
-                  <img src="icon/Vector (5).svg" class="icon-1" /></div
-              ></a>
+            <div class="left_infor">
+              <div class="left_info"><p>Residence:</p></div>
+              <div class="left_value"><%=user.residence%></div>
+            </div>
+            <div class="left_infor">
+              <div class="left_info"><p>Freelance:</p></div>
+              <div class="left_value">Available</div>
+            </div>
+            <div class="left_infor">
+              <div class="left_info"><p>Adress:</p></div>
+              <div class="left_value"><%=user.adress%></div>
             </div>
           </div>
           <div class="marginer"></div>
-          <div class="left_2"></div>
+          <!-- Languages-->
+          <div class="left_3">
+            <div class="languages">Languages</div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.languages[0]%></div>
+              <div class="left_value">100%</div>
+            </div>
+            <div class="line"></div>
+
+            <div class="left_infor">
+              <div class="left_info"><%=user.languages[1]%></div>
+              <div class="left_value">80%</div>
+            </div>
+            <div class="line"></div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.languages[2]%></div>
+              <div class="left_value">60%</div>
+            </div>
+            <div class="line"></div>
+          </div>
           <div class="marginer"></div>
-          <div class="left_3"></div>
+          <!-- Skills-->
+          <div class="left_4">
+            <div class="languages">Skills</div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.skills[0]%></div>
+              <div class="left_value">90%</div>
+            </div>
+            <div class="line"></div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.skills[1]%></div>
+              <div class="left_value">85%</div>
+            </div>
+            <div class="line"></div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.skills[2]%></div>
+              <div class="left_value">80%</div>
+            </div>
+            <div class="line"></div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.skills[3]%></div>
+              <div class="left_value">75%</div>
+            </div>
+            <div class="line"></div>
+            <div class="left_infor">
+              <div class="left_info"><%=user.skills[4]%></div>
+              <div class="left_value">85%</div>
+            </div>
+            <div class="line"></div>
+          </div>
+          <!-- end Skills-->
           <div class="marginer"></div>
-          <div class="left_4"></div>
-          <div class="marginer"></div>
-          <div class="left_5"></div>
-          <div class="marginer"></div>
+          <!-- Extra skills-->
+          <div class="left_5">
+            <div class="languages">Extra Skills</div>
+            <div class="less">
+              <div class="less-1"><img src="icon/Icons.svg" alt="" /></div>
+              <div class="text"><%=user.extra_skills[0]%></div>
+            </div>
+
+            <div class="less">
+              <div class="less-1"><img src="icon/Icons.svg" alt="" /></div>
+              <div class="text"><%=user.extra_skills[1]%></div>
+            </div>
+            <div class="less">
+              <div class="less-1"><img src="icon/Icons.svg" alt="" /></div>
+              <div class="text"><%=user.extra_skills[2]%></div>
+            </div>
+            <div class="less">
+              <div class="less-1"><img src="icon/Icons.svg" alt="" /></div>
+              <div class="text"><%=user.extra_skills[3]%></div>
+            </div>
+          </div>
         </div>
-        <div class="midd_frame"></div>
-        <div class="right_frame"></div>
+        <div class="midd_frame">
+          <div class="header">
+            <div class="head_left">
+              <div class="head_top">Doctor neurologists in OHSU Hospital</div>
+              <div class="htop_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.
+              </div>
+              <div class="head_btn">
+                <h1>HIRE ME→</h1>
+                <div class="btn_img">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="head_right"></div>
+          </div>
+          <div class="midd_footer">
+            <div class="my_ser">
+              <h1>My Service</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. lorem
+                ipsum
+              </p>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="card_icon">
+                  <img src="box_images/coding.svg" alt="" />
+                </div>
+                <div class="card_h1">Web Development</div>
+                <div class="card_text">Blog, E-Commerce</div>
+              </div>
+              <div class="card">
+                <div class="card_icon">
+                  <img src="box_images/illustration.svg" alt="" />
+                </div>
+                <div class="card_h1">UI/UX design</div>
+                <div class="card_text">Mobile app, website design</div>
+              </div>
+              <div class="card">
+                <div class="card_icon">
+                  <img src="box_images/Microphone.svg" alt="" />
+                </div>
+                <div class="card_h1">Sound Design</div>
+                <div class="card_text">Voice Over, Beat Making</div>
+              </div>
+              <div class="card">
+                <div class="card_icon">
+                  <img src="box_images/game-development.svg" alt="" />
+                </div>
+                <div class="card_h1">game design</div>
+                <div class="card_text">Character Design, Props & Objects</div>
+              </div>
+              <div class="card">
+                <div class="card_icon">
+                  <img src="box_images/Photographer.png" alt="" />
+                </div>
+                <div class="card_h1">photography</div>
+                <div class="card_text">portrait, product photography</div>
+              </div>
+              <div class="card">
+                <div class="card_icon">
+                  <img src="box_images/Vector9.svg" alt="" />
+                </div>
+                <div class="card_h1">advertising</div>
+                <div class="card_text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                  nulla diam in ac dictum a urna viverra morbi.
+                  <button class="order_now">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right_frame">
+          <div class="tepa">
+            <img src="icon/right.svg" alt="" />
+          </div>
+          <div class="pasts">
+            <div class="past_icon">
+              <a href=""><img src="icon/right1.svg" alt="" /></a>
+            </div>
+            <div class="past_icon">
+              <a href=""><img src="icon/right2.svg" alt="" /></a>
+            </div>
+            <div class="past_icon">
+              <a href=""><img src="icon/right3.svg" alt="" /></a>
+            </div>
+            <div class="past_icon">
+              <a href=""><img src="icon/right4.svg" alt="" /></a>
+            </div>
+            <div class="past_icon">
+              <a href=""><img src="icon/right5.svg" alt="" /></a>
+            </div>
+            <div class="past_icon">
+              <a href=""><img src="icon/right6.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
