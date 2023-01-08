@@ -20,6 +20,7 @@
 
 //const result = calculator(8, "-", 4);
 
+// Callback
 console.log("jack MA maslahatlari");
 const list = [
   "yaxshi talaba bo'ling", //0-20
@@ -38,17 +39,52 @@ function maslahatBering(a, callback) {
   else if (a > 40 && a <= 50) callback(null, list[3]);
   else if (a > 50 && a <= 60) callback(null, list[4]);
   else {
-    setTimeout(function () {
+    setInterval(function () {
       callback(null, list[5]);
-    }, 5000);
+    }, 1000);
   }
 }
 
 console.log("passed here 0");
-maslahatBering(65, (err, data) => {
+maslahatBering(70, (err, data) => {
   if (err) console.log("ERROR", err);
   else {
     console.log("javobi", data);
   }
 });
 console.log("passed here1");
+
+// [10] Asynchronous
+
+// async function maslahatBering(a) {
+//   if (typeof a !== "number") throw new Error("insert a number");
+//   else if (a <= 20) return list[0];
+//   else if (a > 20 && a <= 30) return list[1];
+//   else if (a > 30 && a <= 40) return list[2];
+//   else if (a > 40 && a <= 50) return list[3];
+//   else if (a > 50 && a <= 60) return list[4];
+//   else {
+//     return new Promise((resolve, reject) => {
+//       setInterval(() => {
+//         resolve(list[5]);
+//       }, 1000);
+//     });
+//   }
+// }
+// then/catch
+// console.log("passed here 0");
+// maslahatBering(25)
+//   .then((data) => {
+//     console.log("javob", data);
+//   })
+//   .catch((err) => {
+//     console.log("ERROR:", err);
+//   });
+// console.log("passed here1");
+
+// asyn/await
+// async function run() {
+//   let javob = await maslahatBering(65);
+//   console.log(javob);
+// }
+// run();
