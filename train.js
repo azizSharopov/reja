@@ -88,3 +88,10 @@ console.log("passed here1");
 //   console.log(javob);
 // }
 // run();
+
+// G-task
+
+const findBig = [4, 12, 5, 9, 12, 3];
+const max = Math.max(...findBig);
+const index = findBig.indexOf(max);
+console.log(index);
