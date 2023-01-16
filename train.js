@@ -98,9 +98,17 @@
 
 // H-Task: Kiritilgan stringni teskari qilib chiqaradigan function tuzing, masalan: reverseString("javascript") return qilishi kerak "tpircsavaj".
 
-let str = "javascript";
+// let str = "javascript";
 
-function reverseString(str) {
-  return str.split("").reverse().join("");
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseString(str));
+
+// I-task
+const numbers = [0, -15, 5, -3, 2, -8, 9, -11];
+
+function positiv(num) {
+  for (let i = 0; num > i; i++) return true;
 }
-console.log(reverseString(str));
+console.log(numbers.filter(positiv));
