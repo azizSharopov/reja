@@ -106,9 +106,25 @@
 // console.log(reverseString(str));
 
 // I-task
-const numbers = [0, -15, 5, -3, 2, -8, 9, -11];
+// const numbers = [0, -15, 5, -3, 2, -8, 9, -11];
 
-function positiv(num) {
-  for (let i = 0; num > i; i++) return true;
+// function positiv(num) {
+//   for (let i = 0; num > i; i++) return true;
+// }
+// console.log(numbers.filter(positiv));
+
+function num(a, callback) {
+  if (typeof a !== "number") callback("insert a number", null);
+  else if (a < 0) callback(null, "-1");
+  else if (a > 0) callback(null, "1");
+  else {
+    callback(null, "0");
+  }
 }
-console.log(numbers.filter(positiv));
+
+num(67, (err, data) => {
+  if (err) console.log("ERROR", err);
+  else {
+    console.log("javobi", data);
+  }
+});
